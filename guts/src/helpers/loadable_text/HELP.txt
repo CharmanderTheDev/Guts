@@ -1,0 +1,17 @@
+HELP: displays this list
+
+NAVIGATION
+    IN: shifts focus into the given subdirectory
+    LIST: lists everything within current directory
+    OUT: shifts focus into the parent directory
+
+ACTIONS
+    EDIT: begin edit mode for given program
+    EXEC: executes the given program or peripheral command
+    HQUIT: exits the game
+    NEWD: creates a new directory
+    NEWP: creates a new program
+
+FILE MANAGEMENT
+    MIN: brings given file from outside directory in
+    MOUT: pushes given file to outside directory
