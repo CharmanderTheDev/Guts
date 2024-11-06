@@ -1,9 +1,9 @@
 use std::io::{self, Write};
-mod helpers;use helpers::command_parse::CommandParser;
+mod helpers;use helpers::{command_parse::CommandParser, directory_manager::Directory};
 
 fn main() {
     
-    let parser = CommandParser::new();
+    let parser = CommandParser::new(Directory::new("Prometheus".to_string(), None));
 
     loop {
 

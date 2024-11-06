@@ -1,1 +1,1 @@
-C:\Users\victo\Documents\GitHub\Guts\guts\target\debug\guts.exe: C:\Users\victo\Documents\GitHub\Guts\guts\src\helpers\command_parse.rs C:\Users\victo\Documents\GitHub\Guts\guts\src\helpers\mod.rs C:\Users\victo\Documents\GitHub\Guts\guts\src\helpers\text_loader.rs C:\Users\victo\Documents\GitHub\Guts\guts\src\main.rs
+/home/runner/Guts/guts/target/debug/guts: /home/runner/Guts/guts/src/helpers/command_parse.rs /home/runner/Guts/guts/src/helpers/mod.rs /home/runner/Guts/guts/src/helpers/text_loader.rs /home/runner/Guts/guts/src/main.rs
