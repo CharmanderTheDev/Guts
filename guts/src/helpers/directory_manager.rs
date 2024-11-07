@@ -5,7 +5,7 @@ pub struct Directory<'a> {
   pub name: String,
   pub files: HashMap<String, File>,
   pub children: HashMap<String, Directory<'a>>,
-  pub parent: Option<&Directory<'_>,
+  pub parent: Option<&'a Directory<'a>>,
   
 } impl<'a> Directory<'_> {
   

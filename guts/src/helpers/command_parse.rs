@@ -2,7 +2,7 @@ use crate::helpers::{text_loader::TextLoader, directory_manager::Directory};
 
 pub struct CommandParser<'a> {
     pub textloader: TextLoader<'a>,
-    pub focus: Directory,
+    pub focus: Directory<'a>,
 }
 impl CommandParser<'_> {
     pub fn new<'a>(focus: Directory) -> CommandParser<'a> {
