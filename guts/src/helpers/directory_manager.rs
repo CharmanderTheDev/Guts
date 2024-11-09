@@ -4,7 +4,7 @@ pub struct Directory<'a> {
   
   pub name: String,
   pub files: HashMap<String, File>,
-  pub children: HashMap<String, Directory<'a>>,
+  pub children: &mut'a HashMap<String, Directory<'a>>,
   pub parent: Option<&'a Directory<'a>>,
   
 } impl<'a> Directory<'_> {
@@ -19,7 +19,7 @@ pub struct Directory<'a> {
     }
   }
 
-  pub fn add_child(&mut self, name: String) {
+  pub fn add_child(&self, name: String) {
     
     self.children.insert(name, Directory::new(name, &self))
   }
