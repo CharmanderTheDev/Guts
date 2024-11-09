@@ -1,5 +1,5 @@
 use std::collections::HashMap;
-use crate::helpers::
+use crate::helpers::directory_manager::Directory;
 
 pub struct Entity<'a> {
 
