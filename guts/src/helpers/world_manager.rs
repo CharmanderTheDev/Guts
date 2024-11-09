@@ -1,20 +1,19 @@
 use std::collections::HashMap;
-use crate::helpers::directory_manager::Directory;
 
-pub struct Entity<'a> {
-
-    pub subentities: HashMap<String, Entity>,
-
-} impl<'a> Entity<'_> {
+pub trait Entity {
     
-    pub new() -> Entity {
-        
-        Entity {
-            HashMap::new(),
-        }
-    }
+    pub fn tick(self) -> Entity;
+}
 
-    pub tick(self)  -> Entity {
+pub struct Computer<'a> {
+
     
-    }
+    
+} impl<'a> Computer<'_> {
+
+    
+
+} impl Entity for Computer {
+
+    
 }
