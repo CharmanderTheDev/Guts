@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use crate::helpers::world_manager::Entity;
 
 pub struct Directory<'a> {
   
@@ -28,9 +29,30 @@ pub struct Directory<'a> {
     
     self.files.insert(file.name, file);
   }
+} impl Entity for Directory {
+  
+  pub fn tick(self) -> Directory {
+    
+    for file in self.files {file.tick():
+  }
 }
 
 pub struct File {
+  
   pub name: String,
   pub content: Vec<String>,
+  pub runstate: i32,
+
+} impl Entity for Directory {
+  
+  fn tick(self) -> File {
+    
+    if self.runstate != -1 {
+      
+      //code interpretation
+      self.runstate+=1;
+    }
+    
+    self
+  }
 }
