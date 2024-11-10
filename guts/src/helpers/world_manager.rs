@@ -34,7 +34,7 @@ pub struct Computer<'a> {
             
             processing_progress: 0.0,
             processing_speed,
-        }c
+        }
     }
         
 } impl Entity for Computer {
